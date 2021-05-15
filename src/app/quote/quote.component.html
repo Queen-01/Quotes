@@ -1,11 +1,11 @@
 <div class="container">
-    <h1>Inspirational Quotes</h1>
-    <hr>
-    <div class="row">
-        <div class="col-md-6">
-            <ul>
-                <div *ngFor='let quote of quotes'></div>
-            </ul>
-        </div>
+  <h1>Inspirational Quotes</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes i=index'>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Show</button>
+      </div>
     </div>
+  </div>
 </div>
