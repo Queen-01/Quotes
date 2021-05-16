@@ -8,10 +8,10 @@ import { Quote }from  '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1, 'Dont stop when you are tired.Stop when you are done.', 'Wesley Snipes', new Date(2015, 7, 6)),
+    new Quote(1, "Don't stop when you are tired.Stop when you're done.", 'Wesley Snipes', new Date(2015, 7, 6)),
     new Quote(2, 'You can never cross the ocean until you have the courage to lose sight of the shore.', 'Christopher Columbus', new Date(1500, 11, 20)),
     new Quote(3, 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.', 'Aristole', new Date(2000, 10, 30)),
-
+    new Quote(4, "Don't wait for your feelings to change to take the action. Take the action and your feelings will change.", 'Barbara Baron', new Date(2002, 12, 23)),
   ]
 
   constructor() { }
