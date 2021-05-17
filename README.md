@@ -1,6 +1,8 @@
 # Quotes
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+
+# Author
+Quienzy Ong'eye
 
 ## Development server
 
@@ -25,3 +27,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Technologies Used
+1. HTML
+1. Css
+1. Typecript
+
+### Live Site
+View [Live] (https://github.com/Queen-01/Quotes.git)
+
+### Licence
+This project is under the  [MIT](License) license
