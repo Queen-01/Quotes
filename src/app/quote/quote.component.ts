@@ -8,14 +8,14 @@ import { Quote }from  '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1, "Don't stop when you are tired.Stop when you're done.", 'Wesley Snipes', new Date(2029, 7, 6)),
-    new Quote(2, 'You can never cross the ocean until you have the courage to lose sight of the shore.', 'Christopher Columbus', new Date(2024, 11, 20)),
-    new Quote(3, 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.', 'Aristole', new Date(2021, 10, 30)),
-    new Quote(4, "Don't wait for your feelings to change to take the action. Take the action and your feelings will change.", 'Barbara Baron', new Date(2023, 12, 23)),
-    new Quote(5, "If you continue to think the way you've always thought, you'll continue to get what you've always got.", 'Kelvin Trudeau', new Date(1999, 11, 1)),
-    new Quote(6, 'Action may not always bring hapiness; but there is no happiness without action.', 'Benjamin Disraeli', new Date(2030, 4, 4)),
-    new Quote(7, 'A successful man is one who can lay a firm foundation with the bricks others have thrown at him.', 'David Brinkley', new Date(2022, 3, 20)),
-    new Quote(8, 'There are two ways of spreading light. To be the candle, or the mirror that reflects it.', 'Edith Wharton', new Date(2040, 12,25)),
+    new Quote(1,  'Wesley Snipes', "Don't stop when you are tired.Stop when you're done.",new Date(2029, 7, 6), 4, 3),
+    new Quote(2,  'Christopher Columbus','You can never cross the ocean until you have the courage to lose sight of the shore.', new Date(2024, 11, 20), 26, 10),
+    new Quote(3,  'Aristole','We are what we repeatedly do. Excellence, then, is not an act, but a habit.', new Date(2021, 10, 30), 20, 30),
+    new Quote(4, 'Barbara Baron', "Don't wait for your feelings to change to take the action. Take the action and your feelings will change.", new Date(2023, 12, 23), 20, 1),
+    new Quote(5, 'Kelvin Trudeau', "If you continue to think the way you've always thought, you'll continue to get what you've always got.", new Date(1999, 11, 1),40,20 ),
+    new Quote(6, 'Benjamin Disraeli', 'Action may not always bring hapiness; but there is no happiness without action.', new Date(2030, 4, 4), 20, 5),
+    new Quote(7, 'David Brinkley', 'A successful man is one who can lay a firm foundation with the bricks others have thrown at him.', new Date(2022, 3, 20), 2, 1),
+    new Quote(8, 'Edith Wharton', 'There are two ways of spreading light. To be the candle, or the mirror that reflects it.', new Date(2040, 12,25), 30, 12),
   ];
 
   toggle = false;
@@ -30,6 +30,21 @@ export class QuoteComponent implements OnInit {
       if(toDelete)
       this.quotes.splice(index,1)
     }
+  }
+
+  addNewQuote(quote: Quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+
+  }
+
+  like(index: any){
+    this.quotes[index].like++;
+  }
+  unlike(index: any){
+    this.quotes[index].unlike++;
   }
 
   constructor() { }
