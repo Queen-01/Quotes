@@ -37,4 +37,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 View [Live] (https://github.com/Queen-01/Quotes.git)
 
 ### Licence
-This project is under the  [MIT](License) license
+This project is under the  [MIT](license) license
