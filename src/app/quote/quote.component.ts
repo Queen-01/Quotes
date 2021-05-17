@@ -14,6 +14,8 @@ export class QuoteComponent implements OnInit {
     new Quote(4, "Don't wait for your feelings to change to take the action. Take the action and your feelings will change.", 'Barbara Baron', new Date(2002, 12, 23)),
     new Quote(5, "If you continue to think the way you've always thought, you'll continue to get what you've always got.", 'Kelvin Trudeau', new Date(1999, 11, 1)),
     new Quote(6, 'Action may not always bring hapiness; but there is no happiness without action.', 'Benjamin Disraeli', new Date(2010, 4, 4)),
+    new Quote(7, 'A successful man is one who can lay a firm foundation with the bricks others have thrown at him.', 'David Brinkley', new Date(2014, 3, 20)),
+    new Quote(8, 'There are two ways of spreading light. To be the candle, or the mirror that reflects it.', 'Edith Wharton', new Date(1998, 12,25)),
   ];
 
   toggle = false;
